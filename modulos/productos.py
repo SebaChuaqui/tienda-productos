@@ -1,6 +1,7 @@
 class Productos:
 
-    def __init__(self, nombre, precio, categoria):
+    def __init__(self, id, nombre, precio, categoria):
+        self.id= id
         self.nombre = nombre
         self.precio = precio
         self.categoria = categoria
@@ -19,9 +20,9 @@ class Productos:
             print(f"precio final de {self.nombre} : {self.precio}")
             return self
         else:
-            print(f'el precio de {self.nombre} disminuye en {porcentaje_cambio}%')
+            print(f'El precio de {self.nombre} disminuye en {porcentaje_cambio}%')
             self.precio -= (self.precio)*porcentaje_cambio/100
-            print(f"precio final de {self.nombre} : {self.precio}")
+            print(f"El precio final de {self.nombre} : {self.precio}")
             return self
 
     # Se cambia el precio 
