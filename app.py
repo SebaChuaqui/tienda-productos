@@ -16,4 +16,10 @@ tienda1.agregar_producto(producto2)
 print(producto2)
 producto2.incrementar(20)
 
+producto3= Productos("Papas Fritas", 1490, "Snack")
+tienda1.agregar_producto(producto3)
+print(producto3)
+producto3.incrementar(50)
+
+
 

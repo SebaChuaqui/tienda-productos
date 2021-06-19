@@ -5,15 +5,11 @@ class Productos:
         self.precio = precio
         self.categoria = categoria
 
+
         # Se imprime la informacion
-    def imprimir_info(self):
-        print(f"""
-                PRODUCTO
-                nombre: {self.nombre}
-                precio: {self.precio}
-                categoria: {self.categoria}
-                """)
-        return self
+    def __str__(self):
+        imprimir = (f"Se agrega el producto: {self.nombre}" )
+        return imprimir
 
     # Se cambia el precio 
     def nuevo_precio(self, nuevo_Precio):
@@ -24,13 +20,6 @@ class Productos:
         self.precio += self.precio * incremento/100
         print(f" El producto: {self.nombre} vale ahora {self.precio}")
         return self
-
-
-
-
-    
-
-    
 
 
 
