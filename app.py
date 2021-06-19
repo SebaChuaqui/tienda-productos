@@ -11,7 +11,7 @@ producto1 = Productos("Yogurt Natural", 345, "Lacteos")
 tienda1.agregar_producto(producto1)
 print(producto1)
 
-producto2= Productos("Beterraga", 890, "Verdura")
+producto2= Productos("Beterraga", 890, "Verduras")
 tienda1.agregar_producto(producto2)
 print(producto2)
 producto2.incrementar(20)
